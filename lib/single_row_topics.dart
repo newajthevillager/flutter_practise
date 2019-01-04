@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:my_flutter_practise/screens/hero_widget_screen.dart';
 import 'package:my_flutter_practise/screens/routing_nav_drawer.dart';
+import 'package:my_flutter_practise/screens/tab_screen.dart';
+import 'package:my_flutter_practise/screens/tab_screen_another_way.dart';
 import 'package:my_flutter_practise/screens/utils_and_etc.dart';
 
 /*
@@ -82,10 +85,16 @@ class SingleRowTopics extends StatelessWidget {
         if (topicName == "Navigation Drawer"){
           debugPrint("pressed $topicName");
           return NavDrawerScreen(topicName);
-//          return UtilsAndEtc("Foo");
         } else if (topicName == "Utils & etc") {
           debugPrint("pressed $topicName");
           return UtilsAndEtc(topicName);
+        } else if (topicName == "Tabs") {
+          debugPrint("pressed $topicName");
+          return TabScreen(topicName);
+        } else if (topicName == "Tabs in another way"){
+          return TabScreenAnotherWay(topicName);
+        } else if (topicName == "Hero Widget") {
+          return HeroWidgetScreen(topicName);
         }
       }
     ));
