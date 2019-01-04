@@ -5,7 +5,7 @@ class TopicsRoute extends StatelessWidget {
 
   var topicsNames = <String>[
     'Navigation Drawer',
-    'Topic Two',
+    'Utils & etc',
     'Topic Three',
     'Topic Four',
     'Topic Five',

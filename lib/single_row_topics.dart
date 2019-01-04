@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_flutter_practise/screens/routing_nav_drawer.dart';
+import 'package:my_flutter_practise/screens/utils_and_etc.dart';
 
 /*
 Single item for a listview
@@ -75,9 +76,17 @@ class SingleRowTopics extends StatelessWidget {
 
   // navigate to screen
   void _navigateToScreen(BuildContext context) {
+    debugPrint("pressed");
     Navigator.push(context, MaterialPageRoute(
       builder: (context) {
-        return NavDrawerScreen(topicName);
+        if (topicName == "Navigation Drawer"){
+          debugPrint("pressed $topicName");
+          return NavDrawerScreen(topicName);
+//          return UtilsAndEtc("Foo");
+        } else if (topicName == "Utils & etc") {
+          debugPrint("pressed $topicName");
+          return UtilsAndEtc(topicName);
+        }
       }
     ));
   }
