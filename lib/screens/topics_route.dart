@@ -9,7 +9,7 @@ class TopicsRoute extends StatelessWidget {
     'Tabs',
     'Tabs in another way',
     'Hero Widget',
-    'Topic Six',
+    'Bottom Sheet',
     'Topic Seven',
     'Topic Eight'
   ];

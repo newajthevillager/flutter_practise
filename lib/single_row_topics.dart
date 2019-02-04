@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_flutter_practise/screens/bottom_sheet_screen.dart';
 import 'package:my_flutter_practise/screens/hero_widget_screen.dart';
 import 'package:my_flutter_practise/screens/routing_nav_drawer.dart';
 import 'package:my_flutter_practise/screens/tab_screen.dart';
@@ -95,6 +96,8 @@ class SingleRowTopics extends StatelessWidget {
           return TabScreenAnotherWay(topicName);
         } else if (topicName == "Hero Widget") {
           return HeroWidgetScreen(topicName);
+        } else if (topicName == "Bottom Sheet"){
+          return BottomSheetScreen(topicName);
         }
       }
     ));
