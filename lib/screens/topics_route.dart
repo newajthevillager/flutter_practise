@@ -10,7 +10,7 @@ class TopicsRoute extends StatelessWidget {
     'Tabs in another way',
     'Hero Widget',
     'Bottom Sheet',
-    'Topic Seven',
+    'Customized FAB',
     'Topic Eight'
   ];
   var baseColors = <Color>[
