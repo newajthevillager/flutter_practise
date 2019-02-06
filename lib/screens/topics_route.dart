@@ -11,7 +11,7 @@ class TopicsRoute extends StatelessWidget {
     'Hero Widget',
     'Bottom Sheet',
     'Customized FAB',
-    'Topic Eight'
+    'Stateful Widget'
   ];
   var baseColors = <Color>[
     Colors.teal,
