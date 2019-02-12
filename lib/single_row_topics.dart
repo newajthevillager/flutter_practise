@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_flutter_practise/screens/bottom_sheet_screen.dart';
+import 'package:my_flutter_practise/screens/collapsing_toolbar_screen.dart';
 import 'package:my_flutter_practise/screens/customized_fab_screen.dart';
 import 'package:my_flutter_practise/screens/hero_widget_screen.dart';
 import 'package:my_flutter_practise/screens/routing_nav_drawer.dart';
@@ -107,6 +108,8 @@ class SingleRowTopics extends StatelessWidget {
           return StatefulWidgetScreen(topicName);
         } else if (topicName == "Swipe to delete") {
           return SwipeToDelete(topicName);
+        } else if (topicName == "Collapsing Toolbar") {
+          return CollapsingToolbarScreen();
         }
       }
     ));

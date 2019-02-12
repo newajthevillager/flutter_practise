@@ -12,7 +12,8 @@ class TopicsRoute extends StatelessWidget {
     'Bottom Sheet',
     'Customized FAB',
     'Stateful Widget',
-    'Swipe to delete'
+    'Swipe to delete',
+    'Collapsing Toolbar'
   ];
   var baseColors = <Color>[
     Colors.teal,
@@ -23,7 +24,8 @@ class TopicsRoute extends StatelessWidget {
     Colors.greenAccent,
     Colors.purpleAccent,
     Colors.red,
-    Colors.purple
+    Colors.purple,
+    Colors.amber
   ];
   var topicsIcons = <IconData>[
     Icons.chat,
@@ -32,7 +34,8 @@ class TopicsRoute extends StatelessWidget {
     Icons.settings_ethernet,
     Icons.monetization_on,Icons.web,
     Icons.games,Icons.insert_emoticon,
-    Icons.delete
+    Icons.delete,
+    Icons.cake
   ];
   
   // build listview items
