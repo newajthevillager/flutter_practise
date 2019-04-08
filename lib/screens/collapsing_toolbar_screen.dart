@@ -21,7 +21,7 @@ class _CollapsingToolbarScreenState extends State<CollapsingToolbarScreen> {
             floating: false,
             flexibleSpace: FlexibleSpaceBar(
               title: Text(
-                  "Collapseing Toolbar",
+                  "Collapsing Toolbar",
                 style: TextStyle(color: Colors.white),
               ),
               centerTitle: true,

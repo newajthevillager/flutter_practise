@@ -7,13 +7,13 @@ class StatefulWidgetScreen extends StatefulWidget {
   StatefulWidgetScreen(this.title);
 
   @override
-  _StaefulWidgetScreenState createState() => _StaefulWidgetScreenState();
+  _StatefulWidgetScreenState createState() => _StatefulWidgetScreenState();
 }
 
-class _StaefulWidgetScreenState extends State<StatefulWidgetScreen> {
+class _StatefulWidgetScreenState extends State<StatefulWidgetScreen> {
 
   String city = "";
-  // controller needed to handle the text of TextField widget
+  // controller is needed to handle the text of TextField widget
   TextEditingController textEditingController = TextEditingController();
 
   @override

@@ -1,7 +1,11 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:my_flutter_practise/single_row_topics.dart';
 
 class TopicsRoute extends StatelessWidget {
+  
+  Random random = Random();
 
   var topicsNames = <String>[
     'Navigation Drawer',
@@ -13,7 +17,8 @@ class TopicsRoute extends StatelessWidget {
     'Customized FAB',
     'Stateful Widget',
     'Swipe to delete',
-    'Collapsing Toolbar'
+    'Collapsing Toolbar',
+    'TextField'
   ];
   var baseColors = <Color>[
     Colors.teal,
@@ -50,16 +55,20 @@ class TopicsRoute extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    
+    // a random colorswatch & icondata
 
     List<SingleRowTopics> topicsList = <SingleRowTopics> [];
     for (int i = 0; i < topicsNames.length; i++) {
-      SingleRowTopics singleRowTopics = new SingleRowTopics(topicsNames[i], baseColors[i], topicsIcons[i]);
+      SingleRowTopics singleRowTopics = new SingleRowTopics(topicsNames[i],
+          baseColors[random.nextInt(baseColors.length)],
+          topicsIcons[random.nextInt(topicsIcons.length)]);
       topicsList.add(singleRowTopics);
     }
     
     return Scaffold(
       appBar: AppBar(
-        title: Text("Flutter Practise"),
+        title: Text("Flutter Practice"),
         centerTitle: true,
       ),
       body: buildListViewItems(topicsList),

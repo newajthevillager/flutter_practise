@@ -8,6 +8,7 @@ import 'package:my_flutter_practise/screens/stateful_widget_screen.dart';
 import 'package:my_flutter_practise/screens/swipe_to_delete_screen.dart';
 import 'package:my_flutter_practise/screens/tab_screen.dart';
 import 'package:my_flutter_practise/screens/tab_screen_another_way.dart';
+import 'package:my_flutter_practise/screens/textfield_screen.dart';
 import 'package:my_flutter_practise/screens/utils_and_etc.dart';
 
 /*
@@ -110,6 +111,8 @@ class SingleRowTopics extends StatelessWidget {
           return SwipeToDelete(topicName);
         } else if (topicName == "Collapsing Toolbar") {
           return CollapsingToolbarScreen();
+        } else if (topicName == "TextField") {
+          return TextFieldScreen(topicName);
         }
       }
     ));
